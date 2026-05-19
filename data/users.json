@@ -1,0 +1,14 @@
+[
+  {
+    "user_id": 1,
+    "liked_items": ["movie1", "movie2"]
+  },
+  {
+    "user_id": 2,
+    "liked_items": ["movie2", "movie3"]
+  },
+  {
+    "user_id": 3,
+    "liked_items": ["movie1", "movie4"]
+  }
+]
