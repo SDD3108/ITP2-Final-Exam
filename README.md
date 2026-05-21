@@ -1,10 +1,7 @@
 # ITP2-Final-Exam
 S.Damir, Sara.Y, Danial.N, Ariana.Z
 
-<!-- в utils будут всякие утилиты которые будут переиспользоваться, по типу сохранения файла, проверку пользователей и предметов на их наличие (valid)-->
-<!-- в test я просто тестил так что забейте -->
 <!-- в services будет по сути вся основная логика, чтение/изменение файлов,функции (от сюда мб будем импортировать) -->
-<!-- в models  будут классы/модели проекта, то есть основные сущности/структуры с которыми будем работать чтоб понимать чего ждать итд. тут описывается структура объектов, их поля, методы, наследование, инкапсуляция и полиморфизм. По сути models отвечает за то, как выглядят пользователи, предметы и рекомендации внутри программы итд -->
 
 case 7 simple recommendation system
 
@@ -102,7 +99,10 @@ item and recommendation classes
 user,regularUser,adminUser
 
 ### student 3
-???
+decorators
+file handling
+validation
+presentation
 
 ### student 4
 ???
@@ -110,15 +110,11 @@ user,regularUser,adminUser
 ## efficiency
 
 instead of searching items in a list every time, the project uses dictionary:
-
-<!-- потом найду в вашем коде, но пока что оно будет примерно так выглядить -->
-<!-- self.items_map={item.item_id:item for item in items} -->
+self.items_map={item.item_id:item for item in items}
 
 this gives fast lookup close to O(1).
 
 similarity uses sets:
-
-<!-- тут тоже -->
-<!-- same_items=set1.intersection(set2) -->
+same_items=set1.intersection(set2)
 
 this is faster and cleaner than comparing every item with nested loops.
